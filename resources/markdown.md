@@ -197,7 +197,7 @@ In the scikit-learn's official source repo, about how many issues are outstandin
 3. 700  
 4. 7000  
 
->>REPLACE THIS TEXT WITH YOUR RESPONSE
+>>675 issues are outstanding as of Nov 10,2016.I will choose option 3, it being closest in number to 675.
 
 ---
 
