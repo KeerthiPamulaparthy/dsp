@@ -48,13 +48,13 @@ cross-platform.
 
 Did you install Python 2 or 3? Why?  
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> I have been using Python 2, as I started off learning Python with version 2.7 and I am aware of the key difference between Python 2.7 and Python 3, and ways to get around it. I also intend to switch to Python 3.
 
 ###Q2. Which Python Version Installed   
 
 How can you check the version of Python installed if you happen to be on an unfamiliar computer?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> Typing python --version or python -V at the command line prompt tells me which python version is installed on a computer.
 
  
 
