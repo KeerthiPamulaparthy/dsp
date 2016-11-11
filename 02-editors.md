@@ -60,7 +60,7 @@ We will also use Jupyter (IPython) notebooks, but this does not remove the need 
 
 What terminal editor will you use? How did you make your decision?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>>I will use Vim as my terminal editor as I am familiar with it and learning a few commands will help accomplish the basic tasks, however learning more commands will make vim a powerful text editor.
 
 --
 
@@ -68,6 +68,11 @@ What terminal editor will you use? How did you make your decision?
 
 What graphical editor will you use? How did you make your decision? What are some interesting features of your editor? What are some useful keyboard shortcuts for your editor? How do you customize your editor?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>>  I chose sublime text editor as my graphical editor, as I liked its interface. I based my decision by comparing with other text editors, and I found that Sublime text editor is more user friendly. Some keyboard shortcuts are:
+command + N - new file
+command + O - open file
+command + S - save a file
+command + F - find
+I was able to customize sublime text by installing Package Control.
 
  
