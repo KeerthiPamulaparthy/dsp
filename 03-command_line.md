@@ -9,7 +9,18 @@ tutorial](https://web.archive.org/web/20160708171659/http://cli.learncodethehard
 
 Make a cheat sheet for yourself: a list of at least **ten** commands and what they do, focused on things that are new, interesting, or otherwise worth remembering.
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> >
+pwd - prints the current directory
+mkdir - create a new directory
+cd - changes the current directory
+ls - lists the current directory
+rmdir - removes the directory specified
+pushd - pushes current directory into a later directory
+popd - jumps back to the starting directory
+cp - copies the specified file
+less - to view a file
+man - to get help
+grep - search for specified string
 
 ---
 
@@ -24,7 +35,14 @@ What do the following commands do:
 `ls -t`  
 `ls -Glp`  
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > 
+`ls`  - lists directory contents
+`ls -a`  - lists directory contents including those beginning with a dot (.)
+`ls -l`  -  lists directory contents in long format, including the total file size content
+`ls -lh`  - lists directory contents in long format, with size specified as byte, kilobyte, megabyte, gigabyte or terabyte
+`ls -lah`  -  lists directory contents in long format, with size specified as byte, kilobyte, megabyte, gigabyte or terabyte and specifies directory contents beginning with a (.)
+`ls -t`  -  lists directory contents sorted in time modified order followed by sorting in  lexicographical order
+`ls -Glp` - lists directory contents, with colorized output, in long listing, and with directories ending with a slash ('/')
 
 ---
 
@@ -32,7 +50,8 @@ What do the following commands do:
 
 Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) and pick 5 of your favorites:
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > ls -l, ls -1, ls -R, ls -u,ls -t
+
 
 ---
 
@@ -40,7 +59,14 @@ Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) 
 
 What does `xargs` do? Give an example of how to use it.
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > 
+xargs expects input from stdin and echo’s the output back
+example: 
+$ xargs
+hi
+good morning
+cntrl+d
+hi good morning
 
  
 
