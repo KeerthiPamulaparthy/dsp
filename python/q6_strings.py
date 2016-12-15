@@ -3,11 +3,10 @@
 
 
 def donuts(count):
-    """
-    Given an int count of a number of donuts, return a string of the
-    form 'Number of donuts: <count>', where <count> is the number
-    passed in. However, if the count is 10 or more, then use the word
-    'many' instead of the actual count.
+    if count < 10:
+        print "'Number of donuts: %d'" %count
+    else:
+        print "'Number of donuts: many'"
 
     >>> donuts(4)
     'Number of donuts: 4'
@@ -17,16 +16,15 @@ def donuts(count):
     'Number of donuts: many'
     >>> donuts(99)
     'Number of donuts: many'
-    """
-    raise NotImplementedError
+   
 
 
 def both_ends(s):
-    """
-    Given a string s, return a string made of the first 2 and the last
-    2 chars of the original string, so 'spring' yields 'spng'.
-    However, if the string length is less than 2, return instead the
-    empty string.
+    if len(s) >= 2:
+        print s[:2]+s[-2:]
+    else:
+        print "''"
+        
 
     >>> both_ends('spring')
     'spng'
@@ -36,16 +34,20 @@ def both_ends(s):
     ''
     >>> both_ends('xyz')
     'xyyz'
-    """
-    raise NotImplementedError
+   
+
 
 
 def fix_start(s):
-    """
-    Given a string s, return a string where all occurences of its
-    first char have been changed to '*', except do not change the
-    first char itself. e.g. 'babble' yields 'ba**le' Assume that the
-    string is length 1 or more.
+    s = list(s)
+    first_char = s[0]
+    second_part = []
+    for i in s[1:]:
+        if i == first_char:
+            i = '*'
+        second_part.append(i)
+    new_word = first_char + "".join(second_part)
+    print new_word
 
     >>> fix_start('babble')
     'ba**le'
@@ -55,11 +57,13 @@ def fix_start(s):
     'goo*le'
     >>> fix_start('donut')
     'donut'
-    """
+    
     raise NotImplementedError
 
 
 def mix_up(a, b):
+    new_word = b[:2]+a[2:]+' '+a[:2]+b[2:]
+    print new_word
     """
     Given strings a and b, return a single string with a and b
     separated by a space '<a> <b>', except swap the first 2 chars of
@@ -78,6 +82,15 @@ def mix_up(a, b):
 
 
 def verbing(s):
+    if len(s) >= 3 and s[-3:] == 'ing':
+        new_word = s + 'ly'
+        print new_word
+    elif len(s) >= 3 and s[-3:] != 'ing':
+        new_word = s + 'ing'
+        print new_word
+    else:
+        print s
+    
     """
     Given a string, if its length is at least 3, add 'ing' to its end.
     Unless it already ends in 'ing', in which case add 'ly' instead.
@@ -95,6 +108,13 @@ def verbing(s):
 
 
 def not_bad(s):
+    s.split(" ")
+    if s.find('not') < s.find('bad'):
+        first_part = s[:s.find('not')]
+        new_line = first_part + 'good'
+        print new_line
+    else:
+        print s
     """
     Given a string, find the first appearance of the substring 'not'
     and 'bad'. If the 'bad' follows the 'not', replace the whole
@@ -115,6 +135,34 @@ def not_bad(s):
 
 
 def front_back(a, b):
+     if len(a)%2 == 0 and len(b)%2 == 0:
+        word1_first = a[:len(a)/2]
+        word1_second = a[len(a)/2:]
+        word2_first = b[:len(b)/2]
+        word2_second = b[len(b)/2:]
+        new_word = word1_first + word2_first + word1_second + word2_second
+        print new_word
+    elif len(a)%2 != 0 and len(b)%2 == 0:
+        word1_first = a[:(len(a)/2)+1]
+        word1_second = a[(len(a)/2)+1:]
+        word2_first = b[:len(b)/2]
+        word2_second = b[len(b)/2:]
+        new_word = word1_first + word2_first + word1_second + word2_second
+        print new_word
+    elif len(a)%2 == 0 and len(b)%2 != 0:
+        word1_first = a[:(len(a)/2)]
+        word1_second = a[(len(a)/2):]
+        word2_first = b[:len(b)/2+1]
+        word2_second = b[len(b)/2+1:]
+        new_word = word1_first + word2_first + word1_second + word2_second
+        print new_word
+    else:
+        word1_first = a[:(len(a)/2)+1]
+        word1_second = a[(len(a)/2)+1:]
+        word2_first = b[:len(b)/2+1]
+        word2_second = b[len(b)/2+1:]
+        new_word = word1_first + word2_first + word1_second + word2_second
+        print new_word
     """
     Consider dividing a string into two halves. If the length is even,
     the front and back halves are the same length. If the length is
