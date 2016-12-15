@@ -12,7 +12,7 @@ For quick and easy interactive practice with Python, many people enjoy [Codecade
 
 How are Python lists and tuples similar and different? Which will work as keys in dictionaries? Why?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> Lists and Tuples are similar in that both are a sequence of values, and the values can be strings, lists or tuples. However, the key difference between them is that lists are mutable, whereas tuples are immutable. Tuples will work as keys in a dictionary, due to the fact that tuples are immutable.
 
 ---
 
@@ -20,7 +20,19 @@ How are Python lists and tuples similar and different? Which will work as keys i
 
 How are Python lists and sets similar and different? Give examples of using both. How does performance compare between lists and sets for finding an element. Why?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> 
+Lists and Sets are similar in that they can be used in a for loop, they support ‘x in list’, ‘x in set’.
+Lists and sets are different in that lists are ordered, while sets are unordered. Lists can contain duplicates, while sets contain no duplicate elements.
+
+List example:
+>basket = ['apple', 'banana','apple']
+>basket
+['apple', 'banana', 'apple']
+
+Sets example:
+>basket = set(['apple', 'banana','apple'])
+>basket
+{'apple', 'banana'}
 
 ---
 
@@ -51,7 +63,7 @@ date_start = '01-02-2013'
 date_stop = '07-28-2015'
 ```
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE (answer will be in number of days)
+>>  937
 
 b.  
 ```
@@ -59,7 +71,7 @@ date_start = '12312013'
 date_stop = '05282015'  
 ```
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE (answer will be in number of days)
+>> 513
 
 c.  
 ```
@@ -67,7 +79,7 @@ date_start = '15-Jan-1994'
 date_stop = '14-Jul-2015'  
 ```
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE  (answer will be in number of days)
+>> 7850
 
 Place code in this file: [q5_datetime.py](python/q5_datetime.py)
 
