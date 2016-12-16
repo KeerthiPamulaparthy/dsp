@@ -3,6 +3,11 @@
 
 
 def match_ends(words):
+    count = []
+    for item in words:
+        if len(item) >= 2 and item[0] == item[-1]:
+            count.append(item)
+    print len(count)
     """
     Given a list of strings, return the count of the number of strings
     where the string length is 2 or more and the first and last chars
@@ -19,6 +24,17 @@ def match_ends(words):
 
 
 def front_x(words):
+    def front_x(words):
+    sort_words = sorted(words)
+    x_list = []
+    other_words = []
+    for i in sort_words:
+        if i[0] == 'x':
+            x_list.append(i)
+        else:
+            other_words.append(i)
+    new_list = x_list + other_words
+    print new_list
     """
     Given a list of strings, return a list with the strings in sorted
     order, except group all the strings that begin with 'x' first.
@@ -36,6 +52,17 @@ def front_x(words):
 
 
 def sort_last(tuples):
+    last_digit = []
+    for i in tuples:
+        last_digit.append(i[-1])
+    tuples_dict = {}
+    for i in range(len(tuples)):
+        tuples_dict[tuples[i]] = last_digit[i]
+    tuples_dict
+    sorted_tuples = []
+    for key, value in sorted(tuples_dict.iteritems(), key = lambda (k,v): (v,k)):
+        sorted_tuples.append(key)
+    print sorted_tuples
     """
     Given a list of non-empty tuples, return a list sorted in
     increasing order by the last element in each tuple.
