@@ -40,7 +40,8 @@ Sets example:
 
 Describe Python's `lambda`. What is it, and what is it used for? Give at least one example, including an example of using a `lambda` in the `key` argument to `sorted`.
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> Lambda expressions can be used to create small anonymous functions. They can be used whereever function objects are used, and are restricted to a single expression.
+Example: sorted(professor_dict.items(), key = lambda name: name[1])
 
 ---
 
@@ -48,7 +49,26 @@ Describe Python's `lambda`. What is it, and what is it used for? Give at least o
 
 Explain list comprehensions. Give examples and show equivalents with `map` and `filter`. How do their capabilities compare? Also demonstrate set comprehensions and dictionary comprehensions.
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> List comprehensions can be used to define and create lists. 
+numbers = [1,2,3]
+Squares = [ (x*x) for x in numbers ]
+
+Map: map() is a function with two arguments where the first argument is the function and the second argument is sequence. map() applies the function to all the elements of the sequence and returns a new list with the elements changed by function. 
+
+numbers = [1,2,3]
+Squares =  map(lambda x: x*x, numbers)
+
+Filter:Provides a way to filter the elements in the list.
+numbers = [1,2,3]
+odd = filter(lambda x: x % 2 != 0, numbers)
+
+Set comprehensions are similar to list comprehension, but they return a set and not a list.
+Example: squares = set(n**2 for n in range(10))
+
+A Dictionary comprehension takes two lists and creates a dictionary where the item at each position in the first list becomes a key and the item at the corresponding position in the second list becomes the value.
+example:
+string = ['a', 'b', 'c']
+Squares_dict = {k: v**2 for (k, v) in zip(string,range(10))}
 
 ---
 
