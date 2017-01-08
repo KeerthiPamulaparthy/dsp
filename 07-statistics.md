@@ -92,7 +92,14 @@ P(I/T) = 0.45
 ###Q6. Bayesian &amp; Frequentist Comparison  
 How do frequentist and Bayesian statistics compare?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> According to the Bayes theorem:
+p(H|D) = p(H) p(D|H) / p(D) 
+where, p(H) is the probability of the hypothesis before we see the data, or the prior probability.
+p(H/D) is the probability of the hypothesis after we see the data, called the posterior
+p(D/H) is the probability of the data, given the hypothesis, called the likelihood
+p(D) is the probability of the data under any hypothesis
+While the Bayesian approach uses a probability distribution of the hypothesis, the frequentist approach uses a conditional distribution of data for given hypothesis. 
+So, while the bayesian approach relies on a subjective prior, the frequentist approach does not. The frequentist approach relies on the likelihood, and it does not require a prior. The frequentist approach relies on the calculation of a p-value to accept  or fail to accept the null hypothesis.
 
 ---
 
